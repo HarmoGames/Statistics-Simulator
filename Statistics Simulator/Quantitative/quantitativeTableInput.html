@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Statistic Simulator</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div>
+            <h1>Bienvenue dans Statistic Simulator !</h1>
+        </div>
+        <div>
+            <p>(quanti)Choisissez le nombre de modalités que va comporter votre tableau:<input type="number" id="rows" style="width: 8em" min="2" max="20" placeholder="Entre 2 et 20"></p>
+            <input type="button" value="Créer un tableau" onclick="verification()">
+            <div id="tableComments"></div>
+            <div id="controlTable"></div>
+            <div id="table"></div>
+
+
+           <!--<table border="5" cellpadding="10">
+                <tr>
+                    <th>Modalité</th>
+                    <td><input type="text" size="1" id="modality0" value="A"></td>
+                </tr>
+                <tr>
+                    <th>Effectif</th>
+                    <td><input type="text" size="1" id="effectif0" value="9"></td>
+                </tr>
+            </table>-->
+        </div>
+        <script type="text/javascript" src="/Quantitative/quanTI.js" id="script"></script>
+    </body>
+</html>

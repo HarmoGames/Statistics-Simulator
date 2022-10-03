@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Statistic Simulator</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div>
+            <h1>Bienvenue dans Statistic Simulator !</h1>
+        </div>
+        <div>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <th>Modalité</th>
+                    <td><input type="text" size="1" id="modality0" value="A"></td>
+                    <td><input type="text" size="1" id="modality1" value="B"></td>
+                    <td><input type="text" size="1" id="modality2" value="C"></td>
+                    <td><input type="text" size="1" id="modality3" value="D"></td>
+                </tr>
+                <tr>
+                    <th>Effectif</th>
+                    <td><input type="text" size="1" id="effectif0" value="9"></td>
+                    <td><input type="text" size="1" id="effectif1" value="20"></td>
+                    <td><input type="text" size="1" id="effectif2" value="17"></td>
+                    <td><input type="text" size="1" id="effectif3" value="4"></td>
+                </tr>
+            </table>
+
+            <div id="tableSettings">
+                <p>ECC (Effectif Cumulé Croissant)<input type="checkbox" id="ECCA"></p>
+                <p>ECD (Effectif Cumulé Décroissant)<input type="checkbox" id="ECDA"></p>
+                <p>Fréquence<input type="checkbox" id="frequencyA"></p>
+                <p>Pourcentage<input type="checkbox" id="percentA"></p>
+                <p>PCC (Pourcentage Cumulé Croissant)<input type="checkbox" id="PCCA"></p>
+                <p>PCD (Pourcentage Cumulé Déroissant)<input type="checkbox" id="PCDA"></p>
+                <p>Moyenne<input type="checkbox" id="averageA"></p>
+                <p>Mode<input type="checkbox" id="modeA"></p>
+                <p>Médiane<input type="checkbox" id="medianA"></p>
+            </div>
+
+            <input type="button" value="Proceed" id="generate" onclick="Generate()">
+
+            <table border="5" cellpadding="10">
+                <tr>
+                    <th>Modalité</th>
+                    <th id="modalityR0">...</th>
+                    <th id="modalityR1">...</th>
+                    <th id="modalityR2">...</th>
+                    <th id="modalityR3">...</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <th>Effectif</th>
+                    <td id="effectifR0">...</td>
+                    <td id="effectifR1">...</td>
+                    <td id="effectifR2">...</td>
+                    <td id="effectifR3">...</td>
+                    <td id="effectifRTotal">...</td>
+                </tr>
+                <tr>
+                    <th>Effectif Cumulé Croissant</th>
+                    <td id="ECC0">...</td>
+                    <td id="ECC1">...</td>
+                    <td id="ECC2">...</td>
+                    <td id="ECC3">...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <th>Effectif Cumulé Décroissant</th>
+                    <td id="ECD0">...</td>
+                    <td id="ECD1">...</td>
+                    <td id="ECD2">...</td>
+                    <td id="ECD3">...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <th>Fréquence</th>
+                    <td id="frequency0">...</td>
+                    <td id="frequency1">...</td>
+                    <td id="frequency2">...</td>
+                    <td id="frequency3">...</td>
+                    <td id="frequencyTotal">...</td>
+                </tr>
+                <tr>
+                    <th>Pourcentage</th>
+                    <td id="percent0">...</td>
+                    <td id="percent1">...</td>
+                    <td id="percent2">...</td>
+                    <td id="percent3">...</td>
+                    <td id="percentTotal">...</td>
+                </tr>
+                <tr>
+                    <th>Pourcentage Cumulé Croissant</th>
+                    <td id="PCC0">...</td>
+                    <td id="PCC1">...</td>
+                    <td id="PCC2">...</td>
+                    <td id="PCC3">...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <th>Pourcentage Cumulé Décroissant</th>
+                    <td id="PCD0">...</td>
+                    <td id="PCD1">...</td>
+                    <td id="PCD2">...</td>
+                    <td id="PCD3">...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <th>Moyenne</th>
+                    <td colspan="5" style="text-align:center" id="average">...</td>
+                </tr>
+                <tr>
+                    <th>Mode</th>
+                    <td colspan="5" style="text-align:center" id="mode">...</td>
+                </tr>
+                <tr>
+                    <th>Médiane</th>
+                    <td colspan="5" style="text-align:center" id="median">...</td>
+                </tr>
+            </table>
+        </div>
+        <script type="text/javascript" src="/generate.js" id="script"></script>
+    </body>
+</html>
